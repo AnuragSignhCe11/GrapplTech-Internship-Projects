@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Tires</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #0c0c0c;
+        }
+
+        .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            padding: 20px;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 50%;
+            animation: fadeInLeft 1.5s ease-in-out;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .hero-content .btn {
+            padding: 15px 30px;
+            border: 2px solid white;
+            background: linear-gradient(45deg, #ff0080, #ff8c00);
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .hero-content .btn:hover {
+            background: white;
+            color: #0c0c0c;
+        }
+
+        .hero-image {
+            max-width: 45%;
+            animation: fadeInRight 1.5s ease-in-out;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 600px;
+            object-fit: cover;
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .hero-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-content {
+                max-width: 100%;
+            }
+
+            .hero-image {
+                max-width: 80%;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>We Design The Best And The Most Colorful Tires On The Market</h1>
+            <p>By appreciating our clients' vehicles and talking to them, we know exactly what kind and what color of tires will be perfect for them. We give 100% to every client.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-bg.png" alt="Colorful Tires">
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

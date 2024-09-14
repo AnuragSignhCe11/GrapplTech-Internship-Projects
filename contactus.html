@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProVice Consultation Agency - Contact Us</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* header {
+            background-color: #ffffff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .navbar-brand {
+            color: #f45b69 !important;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            color: #555555 !important;
+            margin-right: 20px;
+        }
+
+        .nav-link.active {
+            color: #f45b69 !important;
+        }
+
+        .navbar.transparent {
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: none;
+        } */
+
+        .contact-section {
+            padding: 60px 20px;
+            background-color: #ffffff;
+        }
+
+        .contact-section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .contact-form {
+            background-color: #f4f4f4;
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h4 {
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .contact-form .form-control {
+            margin-bottom: 20px;
+        }
+
+        .contact-form .btn {
+            background-color: #f45b69;
+            color: #ffffff;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form .btn:hover {
+            background-color: #e04456;
+        }
+
+        .map {
+            height: 400px;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        .footer-section {
+            background-color: #34495e;
+            color: #ffffff;
+            padding: 60px 0;
+        }
+
+        .footer-section h5 {
+            color: #f45b69;
+            margin-bottom: 20px;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #ffffff;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #f45b69;
+            margin-bottom: 20px;
+        }
+
+        .footer-nav {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .footer-nav li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="container-fluid p-4 bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand fs-3 fw-bold" href="#">ProVice</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contactus.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact-section container mt-5">
+        <h2>Contact Us</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="map mb-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509371!2d144.9537353154813!3d-37.81720974241698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43cfb1bba1%3A0x5045675218ce6e0!2sVictoria%20St%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sin!4v1583567169867!5m2!1sen!2sin" 
+                        width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="contact-form">
+                    <h4>Get In Touch</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- New Footer Section -->
+    <footer class="footer-section container-fluid">
+        <div class="container">
+            <div class="row">
+                <!-- Logo and Description -->
+                <div class="col-md-3 mb-4">
+                    <div class="footer-logo">ProVice</div>
+                    <p>We are committed to providing top-notch consultation services that cater to all your business needs.</p>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="col-md-3 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Additional Links -->
+                <div class="col-md-3 mb-4">
+                    <h5>Services</h5>
+                    <ul class="footer-nav">
+                        <li><a href="#">Tech Development</a></li>
+                        <li><a href="#">Customer Insight</a></li>
+                        <li><a href="#">Financial Planning</a></li>
+                        <li><a href="#">Legal Documentation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-md-3 mb-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: contact@provice.com</p>
+                    <p>Phone: +123 456 7890</p>
+                    <p>Address: 123 Business Street, City, Country</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
